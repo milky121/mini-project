@@ -80,9 +80,10 @@
 .sidebar_menu .menu li{
     margin: 6px;
     padding: 14px 20px;
+    
 }
 
-.sidebar_menu .menu{
+.sidebar_menu .menu li a{
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -105,9 +106,14 @@
 
 .sidebar_menu .social_media i{
     color: white;
-    opacity: 0.5;
+    opacity: 1;
     padding: 0 5px;
 
+}
+
+.sidebar_menu .menu li i{
+    font-size: 20px;
+    color: white;
 }
 
 #check{
@@ -129,7 +135,8 @@
 }
  .sidebar_menu .social_media i:hover{
     opacity: 1;
-    transform: scale(1);
+    transform: scale(2);
+    transition: all 0.4s linear;
  }
 
  #check:checked ~ .sidebar_menu{
@@ -147,5 +154,12 @@
     opacity: 1;
  }
 
+ .sidebar_menu .menu li:hover{
+    background-color: rgb(42, 1, 8,0.5);
+    color: black;
+    /* transform: rotate(-30deg); */
+    transition: all 0.4s linear;
+    transform: scale(0.5);
+ }
 
  
